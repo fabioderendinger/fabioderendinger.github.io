@@ -8,7 +8,7 @@ header {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    height: 65vh;
+    height: 70vh;
     width: 100vw;
     color: white;
 }
@@ -40,7 +40,7 @@ header h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 65vh;
+    height: 70vh;
     width: 100vw;
     overflow: hidden;
 }
@@ -82,7 +82,20 @@ header h1 {
     padding-top: 50px;
 }
 
+.pc-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 .profile-picture {
-    height: 400px;
-    width: 400px;
+    /* height: 100%; */
+    max-height: 400px;
+    /* width: 100%; */
+    max-width: 400px;
+}
+
+.small {
+    display: none;
+    margin-bottom: 40px;
 }
