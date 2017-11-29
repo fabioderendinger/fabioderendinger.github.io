@@ -8,7 +8,7 @@ header {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    height: 70vh;
+    height: 90vh;
     width: 100vw;
     color: white;
 }
@@ -20,7 +20,8 @@ header h1 {
 }
 
 .name {
-    color: rgb(219, 18, 129)
+    /* color: rgb(219, 18, 129) */
+    color: #1DE9B6
 }
 
 .contact-btn, .contact-btn:active, .contact-btn:hover, .contact-btn:focus {
@@ -28,6 +29,15 @@ header h1 {
     height: 50px;
     background: none;
     border: 3px white solid;
+    border-radius: 7px;
+    font-size: 1.6rem;
+}
+
+.contact-btn-black, .contact-btn-black:active, .contact-btn-black:hover, .contact-btn-black:focus {
+    width: 200px;
+    height: 50px;
+    background: none;
+    border: 3px black solid;
     border-radius: 7px;
     font-size: 1.6rem;
 }
@@ -40,7 +50,7 @@ header h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 90vh;
     width: 100vw;
     overflow: hidden;
 }
@@ -64,7 +74,6 @@ header h1 {
     }
   }
 
-
 .diag-ele-1 {
     position: absolute;
     z-index: 0 !important;
@@ -75,11 +84,29 @@ header h1 {
     transform-origin: top left;
 }
 
+.diag-ele-2 {
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    background: #1DE9B6;
+    height: 200px;
+    width: 120%;
+    transform: rotate(3deg);
+    transform-origin: top right;
+}
+
 .about {
+    display: flex;
+    align-items: center;
     position: relative;
     background: white;
     z-index: 10 !important;
-    padding-top: 50px;
+    min-height: 80vh;
+    padding: 50px 0px 100px 0px;
+}
+
+#name {
+    margin-bottom:0px;
 }
 
 .pc-container {
@@ -89,13 +116,58 @@ header h1 {
     width: 100%;
 }
 .profile-picture {
-    /* height: 100%; */
+    height: 100%;
     max-height: 400px;
-    /* width: 100%; */
+    width: 100%;
     max-width: 400px;
 }
 
 .small {
     display: none;
     margin-bottom: 40px;
+}
+
+.skills {
+    position: relative;
+    background:#1DE9B6;
+    z-index: 15 !important;
+    padding: 100px 0px 100px 0px;
+}
+
+.portfolio{
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-weight: 900;
+    color: white;
+}
+
+.card{
+    position: relative;
+}
+.card-link { 
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 16;
+}
+
+footer {
+    background: white;
+    z-index: 20;
+}
+
+.footer-mid {
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap; */
+    text-align: center;
+}
+
+.footer-header{
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-weight: 900;
 }

@@ -1,7 +1,7 @@
 $( document ).ready(function() {
     
     $('.typed').typeIt({
-        strings: ["entrepreneur.", "mathematician.", "machine learning engineer.", "full-stack web developer."],
+        strings: ["n entrepreneur.", " mathematician.", " machine learning engineer.", " full-stack web developer."],
         startDelete: true,
         speed: 80,
         startDelay: 4000,
@@ -12,4 +12,16 @@ $( document ).ready(function() {
         loop: true,
         loopDelay: 4000,
    });
+
+
+   var $container = $('#masonry-grid');
+   // initialize
+   $container.masonry({
+     columnWidth: '.col',
+     itemSelector: '.col',
+   });
+
+
 });
+
+
