@@ -1,18 +1,149 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Fabio Derendinger</title>
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/materialize-social.css"  media="screen,projection"/>
+    <!--Import style.css-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--Import Font-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+    <!--Import custom JS functions.js-->
+    <script src="js/functions.js"></script>
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+    <script type="text/javascript" charset="utf-8">
+    </script>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+</head>
+
+<body>
+    <header class="container">
+        <h1>Hello, I'm <span class="name">Fabio Derendinger</span>. <br>
+        I'm a<span class="typed"> full-stack web developer.</span></h1>
+        </h1>
+        <button class="contact-btn">Contact me</button>
+    </header>
+    <div class="header-container">
+        <img class="header-background" src="/images/blackboard.jpg" alt="Blackboard Maths Lecture">
+    </div>
+    <div class="diag-ele-1"></div>
+
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col m12 show-on-medium-and-down small">
+                    <div class="pc-container">
+                        <img src="/images/fabio_derendinger_bw.png" alt="Fabio Derendinger" class="profile-picture">
+                    </div>
+                </div>
+                <div class="col l7 m12">
+                    <h3 id="name">Fabio Derendinger</h3>
+                    <h6><i>MSc Mathematics ETH Zürich, Ex-Management Consultant, Founder of Xambase</i></h6>
+                    <p class="about-text">I combine a passion for numbers and data with a genuine fascination for visionary products and services. Among the things I like to do, read and think about are: Web Applications (Front and Back End), Lean Startups / Business Strategies, Data-driven Marketing, Machine Learning, Product Design, Investing and Real Estate.</p>
+                    <p class="about-text">The order is arbitrary and I’ve always considered myself as a generalist driven by the desire to continuously learn new things and skills. In the past, this broad expertise has helped me to tackle challenges in a holistic way and achieve quick results.</p>
+                    <a href="https://www.facebook.com/fabio.derendinger" class="waves-effect waves-light btn-floating social github"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/fabio-derendinger-76b5a7bb/" class="waves-effect waves-light btn-floating social github"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/fabioderendinger" class="waves-effect waves-light btn-floating social github"><i class="fa fa-github"></i></a>
+                </div>
+                <div class="col l5 hide-on-med-and-down">
+                    <img src="/images/fabio_derendinger_bw.png" alt="Fabio Derendinger" class="profile-picture">
+                </div>
+            </div>
+        </div> 
+    </section>
+    <div class="diag-ele-2"></div>  
+    <section class="skills">
+        <div class="container">
+            <div class="row">
+                <h2 class="portfolio">Front-end Projects</h2>
+            </div>
+            <div id="masonry-grid" class="row">
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                        <img src="images\pomodoro_by_fabio_derendinger.gif">
+                        </div>
+                        <div class="card-content">
+                        <span class="card-title">Pomodoro Clock</span>
+                        <p>An implementation of the effective time management method developed by Francesco Cirillo in the late 1980s. Built using HTML, CSS and JavaScript.</p>
+                        </div>
+                        <a href="#"><span class="card-link"></span></a>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                        <img src="images\tic_tac_toe_by_fabio_derendinger.gif">
+                        </div>
+                        <div class="card-content">
+                        <span class="card-title">Tic Tac Toe</span>
+                        <p>Fancy a game of Tic Tac Toe? The fully responsive implementation of this class game allows to to play against a machine or another human beeing and was built using HTML, CSS and JavaScript.</p>
+                        </div>
+                        <a href="#"><span class="card-link"></span></a>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                        <img src="images\simon_game_by_fabio_derendinger.gif">
+                        </div>
+                        <div class="card-content">
+                        <span class="card-title">Simon Game</span>
+                        <p>Another game? Implementing Games, such as this "Simone Game", is a great way to practice skills required for the development of more interactive business web applications.</p>
+                        </div>
+                        <a href="#"><span class="card-link"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <h2 class="portfolio">Back-end Projects</h2>
+            </div>
+            <div id="masonry-grid" class="row">
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images\movie_homepage_by_fabio_derendinger.gif">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Movie Trailer Website</span>
+                            <p>Movie trailer website project, part of the Udacity Full Stack Web Developer Nanodegree. The server-side python script stores a list of my favorite movies, including box art imagery, movie trailer URL and additional metadata. This data is served as a webpage dynamically generetated by the python script.</p>
+                        </div>
+                        <a target="_blank" href="https://fabioderendinger.github.io/movie-website/"><span class="card-link"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                    <div class="col s12 m1 l3">
+                    </div>
+                    <div class="col s12 m10 l6 footer-mid">
+                            <h2 class="footer-header">Let's talk!</h2>
+                            <p>Do you have an exciting project you need help with? Great, I love new challenges! Contact me to discuss your business case.</p>
+                            <button class="contact-btn-black">Contact me</button>
+                    </div>
+                    <div class="col s12 m1 l3">
+                    </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
