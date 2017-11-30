@@ -61,10 +61,10 @@ body {
 }
 
 .author {
-    border-bottom: 2px solid #e7e7e7;
     max-width: 700px;
     width: 100%;
-    margin-top: 100px 10px 0 10px;
+    padding: 0px 10px 0px 10px;
+    margin-top: 100px;
 }
 
 .author-info {
@@ -108,7 +108,8 @@ body {
     justify-content: center;
     align-items: center;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #e7e7e7;
 }
 
 .author-social .github {
@@ -131,9 +132,12 @@ body {
     font-size: 18px;
 }
 
-.post-content {
-    padding-bottom: 50px;
-    border-bottom: 2px solid #e7e7e7;
+.separator {
+    display: block;
+    margin: 50px 0px 50px 0px;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #e7e7e7;
 }
 
 footer {
