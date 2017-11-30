@@ -3,8 +3,10 @@ layout: post
 title: You're up and running!
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+## Quick Start
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+### Step 1) Fork Jekyll Now to your User Repository
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+Fork this repo, then rename the repository to yourgithubusername.github.io.
+
+Your Jekyll blog will often be viewable immediately at <https://yourgithubusername.github.io> (if it's not, you can often force it to build by completing step 2)
