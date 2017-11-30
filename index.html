@@ -33,11 +33,28 @@
 </head>
 
 <body>
-    <header class="container">
-        <h1>Hello, I'm <span class="name">Fabio Derendinger</span>. <br>
-        I'm a<span class="typed"> full-stack web developer.</span></h1>
-        </h1>
-        <button class="contact-btn">Contact me</button>
+    <header>
+        <nav class="custom-nav">
+            <div class="nav-wrapper">
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog/index.html">Blog</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog/index.html">Blog</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="header-text">
+                <h1>Hello, I'm <span class="name">Fabio Derendinger</span>. <br>
+                I'm a<span class="typed"> full-stack web developer.</span></h1>
+                </h1>
+                <a class="mailto" href="mailto:fabio.derendinger@hotmail.ch" target="_top"><button class="contact-btn">Contact me</button></a>
+            </div>
+        </div>
     </header>
     <div class="header-container">
         <img class="header-background" src="/images/blackboard.jpg" alt="Blackboard Maths Lecture">
@@ -138,7 +155,7 @@
                     <div class="col s12 m10 l6 footer-mid">
                             <h2 class="footer-header">Let's talk!</h2>
                             <p>Do you have an exciting project you need help with? Great, I love new challenges! Contact me to discuss your business case.</p>
-                            <button class="contact-btn-black">Contact me</button>
+                            <a class="mailto-black" href="mailto:fabio.derendinger@hotmail.ch" target="_top"><button class="contact-btn-black">Contact me</button></a>
                     </div>
                     <div class="col s12 m1 l3">
                     </div>
