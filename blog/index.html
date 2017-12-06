@@ -13,7 +13,7 @@ title: Blog Posts
 								<div class="card-content">
 								<span class="blog-info">by Fabio Derendinger</span><span class="blog-date">{{ post.date | date_to_string }}</span>
 								<a href="{{ post.url }}" title="{{ post.title }}"><span class="card-title blog-title">{{ post.title }}</span></a>
-								<p>{{ post.excerpt }}</p>
+								<p>{{ post.excerpt }} {{ site.baseurl }} {{ post.thumbnail.url }} </p>
 								</div>
 						</div>
 				</div>
