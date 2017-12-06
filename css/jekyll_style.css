@@ -127,8 +127,7 @@ h6 {
     justify-content: center;
     align-items: center;
     padding-top: 30px;
-    padding-bottom: 50px;
-    
+    padding-bottom: 50px;  
 }
 
 .author-social {
@@ -165,6 +164,10 @@ hr.separator {
 }
 
 footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    height: 240px;
     background: #1DE9B6;
     padding: 40px 0px 10px 0px;
 }
@@ -194,4 +197,53 @@ footer {
     h6 {
         font-size: 1.6rem;
     }  
+}
+
+.full-window {
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    padding-bottom: 240px;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+
+.card .card-title.blog-title {
+    font-weight: 900;
+    transition: all 0.1s ease;
+}
+
+.card a {
+    color: black;
+}
+
+.card .card-title.blog-title:hover {
+    color: #1DE9B6;
+}
+
+.blog-info, .blog-date {
+    display: inline-block;
+    font-size: 12px;
+    color: rgb(161, 161, 161);
+    margin-bottom: 10px;
+}
+
+.blog-date {
+    padding-left: 30px;
+}
+
+.card-image {
+    overflow: hidden;
+}
+
+.blog-image {
+    transition: all 0.3s ease;
+}
+
+.blog-image:hover {
+    transform: scale(1.1);
 }

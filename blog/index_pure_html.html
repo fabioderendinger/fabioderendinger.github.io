@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Fabio's Blog'</title>
+
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="../css/materialize-social.css"  media="screen,projection"/>
+        <!--Import style.css-->
+        <link rel="stylesheet" type="text/css" href="../css/jekyll_style.css" />
+
+        <!--Import Font-->
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:900" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../js/materialize.min.js"></script>
+        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+        <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+        <!--Import custom JS functions.js-->
+        <script src="../js/jekyll_functions.js"></script>
+        
+        <script type="text/javascript" charset="utf-8"></script>
+    </head>
+    <body class="full-window">
+        <header>
+            <nav class="custom-nav">
+                <div class="nav-wrapper">
+                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../blog/index.html">Blog</a></li>
+                    </ul>
+                    <ul class="side-nav" id="mobile-demo">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../blog/index.html">Blog</a></li>
+                    </ul>
+                </div>
+            </nav>
+				</header>
+
+				<div>
+						<div class="container">
+                            <div class="row"><h1>Blog Posts</h1></div>
+							<div id="masonry-grid" class="row">
+                                <div class="col s12 m6">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <a href="#"><img class="blog-image" src="../images\simon_game_by_fabio_derendinger.gif"></a>
+                                        </div>
+                                        <div class="card-content">
+                                        <span class="blog-info">by Fabio Derendinger</span><span class="blog-date">12.12.2017</span>
+                                        <a href="#"><span class="card-title blog-title">Simon Game</span></a>
+                                        <p>Another game? Implementing Games, such as this "Simone Game", is a great way to practice skills required for the development of more interactive business web applications.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col s12 m6">
+                                        <div class="card">
+                                            <div class="card-image">
+                                            <img src="../images\tic_tac_toe_by_fabio_derendinger.gif">
+                                            </div>
+                                            <div class="card-content">
+                                            <span class="card-title">Tic Tac Toe</span>
+                                            <p>Fancy a game of Tic Tac Toe? The fully responsive implementation of this class game allows to to play against a machine or another human beeing and was built using HTML, CSS and JavaScript.</p>
+                                            </div>
+                                            <a href="#"><span class="card-link"></span></a>
+                                        </div>
+                                    </div>
+                                    <div class="col s12 m6">
+                                        <div class="card">
+                                            <div class="card-image">
+                                            <img src="../images\simon_game_by_fabio_derendinger.gif">
+                                            </div>
+                                            <div class="card-content">
+                                            <span class="card-title">Simon Game</span>
+                                            <p>Another game? Implementing Games, such as this "Simone Game", is a great way to practice skills required for the development of more interactive business web applications.</p>
+                                            </div>
+                                            <a href="#"><span class="card-link"></span></a>
+                                        </div>
+                                    </div>
+                            </div>
+		
+							
+						<!-- <h1>Blog Articles</h1>
+						<ul class="posts">
+							{% for post in site.posts %}
+								<li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+							{% endfor %}
+						</ul> -->
+						</div>
+					</div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m1 l3">
+                    </div>
+                    <div class="col s12 m10 l6 footer-mid">
+                            <p>Coded with <i class="fa fa-heart" aria-hidden="true"></i> by Fabio Derendinger.</p>
+                            <div class="footer-social">
+                                    <a href="https://www.facebook.com/fabio.derendinger" class="waves-effect waves-light btn-floating social github"><i class="fa fa-envelope"></i></a>
+                                    <a href="https://www.facebook.com/fabio.derendinger" class="waves-effect waves-light btn-floating social github"><i class="fa fa-facebook"></i></a>
+                                    <a href="https://www.linkedin.com/in/fabio-derendinger-76b5a7bb/" class="waves-effect waves-light btn-floating social github"><i class="fa fa-linkedin"></i></a>
+                                    <a href="https://github.com/fabioderendinger" class="waves-effect waves-light btn-floating social github"><i class="fa fa-github"></i></a>
+                            </div>
+                    </div>
+                    <div class="col s12 m1 l3">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
