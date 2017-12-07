@@ -16,7 +16,14 @@ $( document ).ready(function() {
    });
 
 
-   var $container = $('#masonry-grid');
+   var $container = $('.masonry-grid-1');
+   // initialize
+   $container.masonry({
+     columnWidth: '.col',
+     itemSelector: '.col',
+   });
+
+   var $container = $('.masonry-grid-2');
    // initialize
    $container.masonry({
      columnWidth: '.col',

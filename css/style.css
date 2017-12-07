@@ -79,6 +79,9 @@ a.mailto-black {
 }
 
 .contact-btn, .contact-btn:active, .contact-btn:hover, .contact-btn:focus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 200px;
     height: 50px;
     background: none;
@@ -88,6 +91,9 @@ a.mailto-black {
 }
 
 .contact-btn-black, .contact-btn-black:active, .contact-btn-black:hover, .contact-btn-black:focus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 200px;
     height: 50px;
     margin-top: 20px;
