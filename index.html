@@ -18,8 +18,8 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:900" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
@@ -31,6 +31,7 @@
 
 <body>
     <header>
+        <!-- Navigation Bar with mobile collapse -->
         <nav class="custom-nav">
             <div class="nav-wrapper">
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -44,6 +45,7 @@
                 </ul>
             </div>
         </nav>
+        <!-- Welcome header -->
         <div class="container">
             <div class="header-text">
                 <h1>Hello, I'm <span class="name">Fabio Derendinger</span>. <br>
@@ -52,15 +54,18 @@
             </div>
         </div>
     </header>
+    <!-- Fixed background image for the welcome header -->
     <div class="header-container">
         <img class="header-background" src="/images/blackboard.jpg" alt="Blackboard Maths Lecture">
     </div>
     <div class="diag-ele-1"></div>
 
+    <!-- About me -->
     <section class="about">
         <div class="container">
             <div class="row">
-                <div class="col m12 show-on-medium-and-down small">
+                <!-- For large screens -->
+                <div class="col m12 show-on-medium-and-down small"> 
                     <div class="pc-container">
                         <img src="/images/fabio_derendinger_bw.png" alt="Fabio Derendinger" class="profile-picture">
                     </div>
@@ -74,15 +79,20 @@
                     <a href="https://www.linkedin.com/in/fabio-derendinger-76b5a7bb/" class="waves-effect waves-light btn-floating social github"><i class="fa fa-linkedin"></i></a>
                     <a href="https://github.com/fabioderendinger" class="waves-effect waves-light btn-floating social github"><i class="fa fa-github"></i></a>
                 </div>
+                <!-- For mobile -->
                 <div class="col l5 hide-on-med-and-down">
                     <img src="/images/fabio_derendinger_bw.png" alt="Fabio Derendinger" class="profile-picture">
                 </div>
             </div>
         </div> 
     </section>
-    <div class="diag-ele-2"></div>  
-    <section class="skills">
+    <div class="diag-ele-2"></div>
+    
+    <!-- Portfolio section -->
+    <section class="portfolio-section">
         <div class="container">
+
+            <!-- Front end projects -->
             <div class="row">
                 <h2 class="portfolio">Front-end Projects</h2>
             </div>
@@ -124,6 +134,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Back end projects -->
             <div class="row">
                 <h2 class="portfolio">Back-end Projects</h2>
             </div>
@@ -143,6 +154,8 @@
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
@@ -151,7 +164,7 @@
                     <div class="col s12 m10 l6 footer-mid">
                             <h2 class="footer-header">Let's talk!</h2>
                             <p>Do you have an exciting project you need help with? Great, I love new challenges! Contact me to discuss your business case.</p>
-                            <a class="mailto-black contact-btn-black"" href="mailto:fabio.derendinger@hotmail.ch" target="_top"></a>
+                            <a class="mailto-black contact-btn-black" href="mailto:fabio.derendinger@hotmail.ch" target="_top">Contact me</a>
                     </div>
                     <div class="col s12 m1 l3">
                     </div>

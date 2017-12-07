@@ -6,18 +6,23 @@ body {
 h1 {
     font-size: 3.6rem;
 }
+
 h2 {
     font-size: 3rem;
 }
+
 h3 {
     font-size: 2.6rem;
 }
+
 h4 {
     font-size: 2.2rem;
 }
+
 h5 {
     font-size: 1.8rem;
 }
+
 h6 {
     font-size: 1.6rem;
 }     
@@ -71,7 +76,6 @@ h6 {
 .button-collapse {
     color: black;
 }
-
 
 .container-mid {
     display: flex;
@@ -177,23 +181,27 @@ footer {
     padding: 50px 0px 50px 0px;
 }
 
-
 @media only screen and (max-width: 700px) {
     h1 {
         font-size: 2.5rem;
     }
+
     h2 {
         font-size: 2.2rem;
     }
+
     h3 {
         font-size: 2.0rem;
     }
+
     h4 {
         font-size: 1.8rem;
     }
+
     h5 {
         font-size: 1.7rem;
     }
+
     h6 {
         font-size: 1.6rem;
     }  
@@ -210,7 +218,6 @@ html {
     margin: 0;
     padding: 0;
 }
-
 
 .card .card-title.blog-title {
     font-weight: 900;
