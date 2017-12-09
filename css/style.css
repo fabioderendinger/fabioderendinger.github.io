@@ -1,7 +1,12 @@
 body {
+    position: relative;
     width: 100%;
     overflow-x: hidden;
     font-family: 'Raleway', sans-serif;
+}
+
+header {
+    position: relative;
 }
 
 .custom-nav {
@@ -55,7 +60,7 @@ body {
     flex-flow: column nowrap;
     justify-content: center;
     height: calc(90vh - 64px); /* Subtract the height of the Navbar */
-    width: 100vw;
+    width: 100%;
     color: white;
 }
 
@@ -135,9 +140,17 @@ a.mailto-black {
     }
   }
 
+.outer-1 {
+    position: absolute;
+    bottom: 0px;
+    width: 100vw;
+    height: 300px;
+    overflow: hidden;
+}
+
 .diag-ele-1 {
     position: absolute;
-    z-index: 0 !important;
+    top: 300px;
     background: white;
     height: 200px;
     width: 120%;
@@ -145,10 +158,17 @@ a.mailto-black {
     transform-origin: top left;
 }
 
+.outer-2 {
+    position: absolute;
+    bottom: 0px;
+    width: 100vw;
+    height: 300px;
+    overflow: hidden;
+}
+
 .diag-ele-2 {
     position: absolute;
-    right: 0;
-    z-index: 10;
+    top: 300px;
     background: #1DE9B6;
     height: 200px;
     width: 120%;
@@ -233,4 +253,12 @@ footer {
     margin-bottom: 20px;
     margin-top: 30px;
     font-weight: 900;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+    .header-text h1 {
+        font-size: 3rem;
+    }
 }
